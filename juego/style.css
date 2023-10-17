@@ -1,0 +1,33 @@
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("cloud.jpg");
+    background-size:     cover;                    
+    
+}   
+.airplane{
+    left: 92px;
+    top: 82px;
+    position: relative;
+    height: 7%;
+    width: 7%;
+}
+.gameArea{
+    position: relative; 
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    height: 90%;
+    width: 90%;
+}
+#worldMap{
+    
+    position: relative;
+    
+}
+#planeimg{
+    height: 100%;
+    width: 100%;
+}
