@@ -31,8 +31,9 @@ let direction = {
         image.src = "./img/planeUp.png";       
     } else if (event.code === "ArrowLeft"){
         // Handle "left"
-        direction.left = true;
+        
         direction.right = false;
+        direction.left = true;
         updateXPosition(-moveRate);
         image.src = "./img/planeLeft.png"; 
     } else if (event.code === "ArrowRight"){
@@ -56,19 +57,19 @@ let direction = {
 
   function checkDirection(){
     if (direction.left == true && direction.up == true){
-image.src = "./img/diagonallyLeftUp.png";
+image.src = "./img/planeUpLeft.png";
 direction.left = false;
 direction.up = false;
     } else if (direction.right == true && direction.up == true){
-      image.src = "./img/diagonallyRightUp.png";
+      image.src = "./img/planeUpRight.png";
       direction.right = false;
       direction.up = false;
     } else if (direction.right == true && direction.down == true){
-      image.src = "./img/diagonallyRightDown.png";
+      image.src = "./img/planeDownRight.png";
       direction.right = false;
       direction.down = false;
     } else if (direction.left == true && direction.down == true){
-      image.src = "./img/diagonallyRightDown.png"; 
+      image.src = "./img/planeDownLeft.png"; 
       direction.left = false;
       direction.down = false; 
     }
