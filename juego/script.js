@@ -103,11 +103,14 @@ function paintTiles(gameBoardArray) {
          if (gameBoardArray[row][column] == "border"){
              img.src = `img/worldTiles/black.png`;
 
+         } else if (gameBoardArray[row][column] == "plane") {
+            img.src = `img/worldTiles/planeUp.png`;
+         } else if (gameBoardArray[row][column] == "empty") { 
+
          } else {
              // Set the src attribute of the img tag based on the array value
              img.src = `img/worldTiles/${gameBoardArray[row][column]}.png`;
-
-         }
+             }
  // Append the img element to the div
  div.appendChild(img);
 
@@ -119,18 +122,19 @@ function paintTiles(gameBoardArray) {
 function initializePlane2DArray(){
     const array = [
         ["border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border"],
-        ["border", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "border"],
-        ["border", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "border"],
-        ["border", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "border"],
-        ["border", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "border"],
-        ["border", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "border"],
-        ["border", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "border"],
-        ["border", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "border"],
-        ["border", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "border"],
-        ["border", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "border"],
-        ["border", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "border"],
+        ["border", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "border"],
+        ["border", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "border"],
+        ["border", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "border"],
+        ["border", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "border"],
+        ["border", "empty", "empty", "plane", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "border"],
+        ["border", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "border"],
+        ["border", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "border"],
+        ["border", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "border"],
+        ["border", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "border"],
+        ["border", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "empty", "border"],
         ["border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border", "border"],
       ];
+      
       
 }
     function initializeGameBoard2DArray() {
