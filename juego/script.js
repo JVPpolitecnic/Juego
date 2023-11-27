@@ -104,12 +104,12 @@ function startTimer(){
 }
 
 function checkCollisionWithCountry(){
-let tolerance = 2;
+let tolerance = 10;
     let countryCoordinates = [
-    [142, 128],
-    [119, 229],
-    [103, 275],
-    [69, 187]
+    [371, 320], //brazil coordinates
+    [333, 551], //kenya coordinates
+    [296, 674], //india coordinates
+    [231, 453] // europe coordinates
 ];
 
 if((position.y <= countryCoordinates[countryToGoTo-1][0] + tolerance &&

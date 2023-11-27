@@ -14,34 +14,34 @@ body{
 }
 .pin{
     position: absolute;
-    height: 25%;
-    width: 15%;
+    height: 20px;
+    width: 20px;
 
 }
 .gameArea{
     position: relative;
-    height: 200px; 
-    width: 407px;
+    height: 600px; 
+    width: 1000px;
 }
 #europe{
-    top: 69px;
-    left: 187px;
+    top: 231px;
+    left: 453px;
 }
 #brazil{
-    top: 142px;
-    left: 128px;
+    top: 371px;
+    left: 320px;
 }
 #india{
-    top: 103px;
-    left: 275px;
+    top: 296px;
+    left: 674px;
 }
 #kenya{
-    top: 119px;
-    left: 229px;
+    top: 333px;
+    left: 551px;
 }
 #worldMap{
-    height: 200px;
-    width: 407px;
+    height: 100%;
+    width: 100%;
 }
 #planeimg{
     
